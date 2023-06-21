@@ -399,16 +399,16 @@
 
 // Class 3 starts here
 
-var monica = {
-  name: "Monica Geller",
-  total: 400,
-  deductMontlyFee: function (fee) {
-    this.total = this.total - fee;
-    return this.name + " remaining balance is " + this.total;
-  }
-};
+// var monica = {
+//   name: "Monica Geller",
+//   total: 400,
+//   deductMontlyFee: function (fee) {
+//     this.total = this.total - fee;
+//     return this.name + " remaining balance is " + this.total;
+//   }
+// };
 
-var rachel = { name: "Rachel Green", total: 1500 };
+// var rachel = { name: "Rachel Green", total: 1500 };
 
 // console.log(monica.deductMontlyFee.call(rachel, 20));
 // var deductMethod = monica.deductMontlyFee.bind(rachel);
