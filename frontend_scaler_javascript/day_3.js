@@ -52,8 +52,10 @@ var monica = {
   // syntax for apply ->  apply(scope, [array values])
   // console.log(Math.max.apply(null,[1,2,3,5])); // get max from an array using apply function
   
+  // if we write arguments inside function then we don't need to pass the parameters.
+  //arguments are array like structures but not array. structure is like objects
   // function abc() {
-  //   console.log(Object.values(arguments))
+  //   console.log(Object.values(arguments)) 
   //   var a = Array.prototype.slice.call(arguments); // arguments.slice()
   //   a.push(10);
   //   console.log(a);
@@ -111,17 +113,17 @@ var monica = {
   
   // ----------------------- prototype -----------------------
   // Prototype is an object available in a constructor function(function)
-  // which will be used for prototypical inheritence
+  // which will be used for prototypical inheritance
   
   // function Foo(y) {
   //   this.y = y;
-  //   this.calculate1 = function (z) {
+  //   this.calculate1 = function (z) { // available locally to this function individual objects
   //     console.log("inside local function object");
   //     return this.x + this.y + z;
   //   };
   // }
   // Foo.prototype.x = 10;
-  // Foo.prototype.calculate = function (z) {
+  // Foo.prototype.calculate = function (z) { // available globally
   //   console.log("inside prototype");
   //   return this.x + this.y + z;
   // };
@@ -129,12 +131,12 @@ var monica = {
   // var b = new Foo(10);
   
   // console.log(b);
-  // console.log(b.calculate()) // function of prototype available globally to all objects
+  // console.log(b.calculate())  // function of prototype available globally to all objects
   // console.log(b.calculate1()) // function of object b available locally 
   
   // console.log(b.__proto__ === Foo.prototype)
   
-  // b.calculate === b.__proto__.calculate
+  // // b.calculate === b.__proto__.calculate
   
   // console.log(Array.prototype)
   
